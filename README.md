@@ -1,27 +1,108 @@
-# Test
+<div align="center">
+<h1> Mon vet-conseil </h1>
+<img src="https://badgen.net/badge/Angular/16.0.3/blue?icon=typescript" alt="Angular">
+<img src="https://badgen.net/badge/status/development/red?icon=github" alt="Python">
+<br> <br>
+Mini-projet universitaire 🎓 de création d'un site web pour la gestion d'une clinique vétérinaire et services aux animaux domestiques.
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+>Lisez attentivement ce document avant de commencer à travailler sur le projet. SVP 😀!
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prise en main
 
-## Code scaffolding
+### Pour les chefs de sous groupes uniquement !
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`Forker` le projet dans votre répertoire et créer autant de branche
+que vous voulez dans cette `fork` pour que chaque personne puisse
+travailler sur une branche différente.
 
-## Build
+### Pour tout le monde
+`Cloner` la branche principale du chef de sous groupe.
+```
+git clone https://github.com/<demander a votre chef de sous groupe>.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Mise en marche
+> Soyez sûr d'être dans votre branche de travail avant toute modification
+``` git checkout <nom de la branche> ```, pour vérifier la branche sur laquelle vous êtes, utiliser la commande ``` git branch ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prérequis
+- NODE.JS ^16.14.0 || ^18.10.0
 
-## Running end-to-end tests
+### Installation des dépendances
+Toutes les dépendances de notre projet sont dans le fichier ``` package.json ```, pour les installer, il suffit de taper la commande suivante :
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Commencer à travailler
+Désormais, vous pouvez commencer à travailler sur le projet
+<br>Créer un `module`, et commencer à travailler dessus.
+```
+ng generate module <nom du module>
+```
+> Ne pas travailler directement dans le module app, relier si besoin votre module au module app
 
-## Further help
+## Règles de gestion de version
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Commit et push
+
+#### Pour tout le monde
+- Vérifier que vous êtes bien sur votre branche de travail
+- Vérifier que vous avez bien `pull` la dernière version de la branche principale (afin d'éviter les conflits,
+  cela permet de mettre à jour votre branche avec la dernière version de la branche principale et voir si votre code est
+  compatible)
+```
+git pull origin <nom de la branche principale>
+```
+- Ajouter les fichiers modifiés
+```
+git add *
+```
+- Commiter les fichiers modifiés
+```
+git commit -m "message du commit"
+```
+- Pusher les fichiers modifiés
+```
+git push origin <nom de votre branche>
+```
+- Créer une `pull request` sur github pour que le chef de sous groupe puisse valider votre code et le merger avec la branche principale,
+  | Bien donner un titre et une description à votre `pull request` pour que le chef de sous groupe puisse comprendre ce que vous avez fait
+
+#### Pour le chef de sous groupe
+Voici les étapes pour merger votre branche avec la branche principale du projet principale
+- Vérifier que vous êtes bien sur la branche principale
+- Vérifier que vous avez bien `pull` la dernière version de la branche principale du projet principale
+```
+git pull origin <nom de la branche principale>
+```
+- Merger votre branche en créant un `pull request` sur github <br>
+  | Bien donner un titre et une description à votre `pull request` pour que le chef de sous groupe puisse comprendre ce que vous avez fait
+
+### Gitignore
+Pour éviter de pusher des fichiers sensibles et inutiles, il faut ajouter les fichiers à ignorer dans le fichier `.gitignore` comme `nodes_modules`
+> Tenez à vérifier cela avant de pusher votre code
+
+### Messages de commit
+Pour les messages de commit, il faut commencer par le type de commit, suivi d'une description du commit :
+- `feat`: pour les nouvelles fonctionnalités
+- `fix`: pour les corrections
+- `refactor`: pour les modifications de code qui n'ajoutent pas de fonctionnalités ou ne corrigent pas de bug
+- `style`: pour les modifications qui n'apportent aucune altération de sens (indentation, mise en forme, ajout d'espace, renommage de variable, etc.)
+- `test`: pour les ajouts de tests
+- `perf`: pour les améliorations de performances
+> exemple : `feat: add login feature`
+
+### Ajout de dépendances (packages)
+Pour des éventuels ajouts de dépendances, il faut les ajouter dans le fichier `package.json` et après les avoir installées avec la commande `npm install <nom du package>`
+> Consulter la documentation de la dépendance pour plus d'information
+
+### Signalement de problèmes
+Tout problème rencontré doit être renseigné afin de pouvoir le corriger. <br>
+Pour signaler un problème, il faut créer une `issue` sur github en donnant un titre et une description du problème rencontré.
+> N'oublier pas de mettre des labels sur votre `issue`
+
+###### Workflow
