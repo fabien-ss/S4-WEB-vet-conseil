@@ -106,3 +106,4 @@ Pour signaler un problème, il faut créer une `issue` sur github en donnant un 
 > N'oublier pas de mettre des labels sur votre `issue`
 
 ###### Workflow
+[![Node.js CI](https://github.com/mendrika261/S4-WEB-vet-conseil/actions/workflows/node.js.yml/badge.svg)](https://github.com/mendrika261/S4-WEB-vet-conseil/actions/workflows/node.js.yml)
