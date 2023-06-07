@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+input[type="date"]{
+    margin-right: 20px;
+}
+
+.champ{
+    margin-top: 40px;
+}
+
+
+
+.calendar {
+   margin-top: 40px;
+}
+ 
+a{
+    color: black;
+}

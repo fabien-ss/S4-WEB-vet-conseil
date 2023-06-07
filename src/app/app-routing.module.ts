@@ -5,7 +5,6 @@ import { GestionRendezVousComponent } from "./gestion-rendez-vous/gestion-rendez
 import { DetailsRendezVousComponent } from "./details-rendez-vous/details-rendez-vous.component";
 
 const routes: Routes = [
-    // { path: '', component : AppComponent },
     { path: '', component : GestionRendezVousComponent },
     { path :  'detail_rendez_vous/:id', component : DetailsRendezVousComponent,}
 ];
